@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="luks" fetch="https://github.com/Luks-organization/" revision="bka" />
+  <remote name="luks-gitlab" fetch="https://gitlab.com/LeCmnGend/" revision="clang-19" />
+
+  <!-- Device -->
+  <project path="device/realme/salaa" name="evolution_device_realme_salaa" remote="luks" />
+
+  <!-- Hardware -->
+  <project path="hardware/mediatek" name="infinity_hardware_mediatek" remote="luks" />
+  <project path="hardware/oplus" name="Lineage_android_hardware_oplus" remote="luks" />
+
+  <!-- SEPolicy -->
+  <project path="device/mediatek/sepolicy_vndr" name="mediatek_sepolicy_vndr" remote="luks" />
+
+  <!-- Vendor -->
+  <project path="vendor/realme/salaa" name="vendor_realme_salaa" remote="luks" />
+  
+  <!-- Kernel -->
+  <project path="kernel/realme/salaa" name="kernel_realme_salaa" remote="luks" />
+
+  <!-- Clang -->
+  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="clang" remote="luks-gitlab" clone-depth="1" revision="clang-19" />
+
+  <!-- Ims -->
+  <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="luks" />
+
+  <!-- ViperFX -->
+  <project path="vendor/ViperFX" name="ViperFX" remote="luks" />
+</manifest>
