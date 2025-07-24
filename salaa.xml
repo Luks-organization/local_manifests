@@ -8,7 +8,7 @@
 
   <!-- Hardware -->
   <project path="hardware/mediatek" name="infinity_hardware_mediatek" remote="luks" />
-  <project path="hardware/oplus" name="evolution_hardware_oplus" remote="luks" />
+  <project path="hardware/oplus" name="yaap_hardware_oplus" remote="luks" />
 
   <!-- SEPolicy -->
   <project path="device/mediatek/sepolicy_vndr" name="mediatek_sepolicy_vndr" remote="luks" />
