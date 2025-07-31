@@ -15,7 +15,7 @@
   <project path="device/mediatek/sepolicy_vndr" name="mediatek_sepolicy_vndr" remote="luks" />
 
   <!-- Vendor -->
-  <project path="vendor/realme/salaa" name="vendor_realme_salaa" remote="luks" />
+  <project path="vendor/realme/salaa" name="vendor_realme_salaa_f18" remote="device" />
   
   <!-- Kernel -->
   <project path="kernel/realme/salaa" name="kernel_realme_salaa" remote="luks" />
