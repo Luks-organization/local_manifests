@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote name="crdroid" fetch="https://github.com/crdroidandroid/" revision="16.0" />
   <remote name="device" fetch="https://github.com/Luks-organization/" revision="16" />
   <remote name="luks" fetch="https://github.com/Luks-organization/" revision="bka" />
   <remote name="luks-gitlab" fetch="https://gitlab.com/LeCmnGend/" revision="clang-19" />
 
   <!-- Device -->
-  <project path="device/realme/salaa" name="infinity_device_realme_salaa" remote="device" />
+  <!--project path="device/realme/salaa" name="infinity_device_realme_salaa" remote="device" />-->
 
   <!-- Hardware -->
   <project path="hardware/mediatek" name="infinity_hardware_mediatek" remote="luks" />
-  <project path="hardware/oplus" name="evolution_hardware_oplus" remote="luks" />
+  <project path="hardware/oplus" name="android_hardware_oplus" remote="crdroid" />
 
   <!-- SEPolicy -->
   <project path="device/mediatek/sepolicy_vndr" name="mediatek_sepolicy_vndr" remote="luks" />
 
   <!-- Vendor -->
-  <project path="vendor/realme/salaa" name="vendor_realme_salaa_f18" remote="device" />
+  <project path="vendor/realme/MT6785" name="vendor_realme_MT6785" remote="device" />
   
   <!-- Kernel -->
-  <project path="kernel/realme/salaa" name="kernel_realme_salaa" remote="luks" />
+  <project path="kernel/realme/mt6785" name="kernel_realme_mt6785" remote="luks" />
 
   <!-- Clang -->
-  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="clang" remote="luks-gitlab" clone-depth="1" revision="clang-19" />
+  <!--project path="prebuilts/clang/host/linux-x86/clang-proton" name="clang" remote="luks-gitlab" clone-depth="1" revision="clang-19" />-->
 
   <!-- Ims -->
   <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="luks" />
