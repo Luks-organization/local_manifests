@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="luks-evo" fetch="https://github.com/Luks-organization/" revision="evox_bka" />
+  <remote name="luks-evo" fetch="https://github.com/Luks-organization/" revision="infinity-x" />
   <remote name="nonlos" fetch="https://github.com/LineageOS/" revision="lineage-22.2" />
-  <remote name="evox" fetch="https://github.com/Evolution-X-Devices/" revision="bka" />
   <remote name="device" fetch="https://github.com/Luks-organization/" revision="16" />
   <remote name="luks" fetch="https://github.com/Luks-organization/" revision="bka" />
   <remote name="luks-gitlab" fetch="https://gitlab.com/LeCmnGend/" revision="clang-19" />
@@ -15,7 +14,7 @@
 
   <!-- Hardware -->
   <project path="hardware/mediatek" name="infinity_hardware_mediatek" remote="luks" />
-  <project path="hardware/oplus" name="hardware_oplus" remote="evox" />
+  <project path="hardware/oplus" name="android_hardware_oplus" remote="device" />
 
   <!-- SEPolicy -->
   <project path="device/mediatek/sepolicy_vndr" name="mediatek_sepolicy_vndr" remote="luks" />
@@ -24,7 +23,7 @@
   <project path="vendor/realme/MT6785" name="vendor_realme_MT6785" remote="device" />
   
   <!-- Kernel -->
-  <project path="kernel/realme/MT6785" name="kernel_realme_MT6785" remote="luks" />
+  <project path="kernel/realme/MT6785" name="android_kernel_realme_mt6785" remote="device" />
 
   <!-- Clang -->
   <!--project path="prebuilts/clang/host/linux-x86/clang-proton" name="clang" remote="luks-gitlab" clone-depth="1" revision="clang-19" />-->
