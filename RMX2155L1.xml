@@ -1,36 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="luks-evo" fetch="https://github.com/Luks-organization/" revision="infinity-x" />
-  <remote name="nonlos" fetch="https://github.com/LineageOS/" revision="lineage-22.2" />
+  <remote name="dsp" fetch="https://github.com/Luks-organization/" revision="jdsp" />
+  <remote name="dolby" fetch="https://github.com/Luks-organization/" revision="sony-1.3" />
+  <remote name="bt" fetch="https://github.com/LineageOS/" revision="lineage-22.2" />
   <remote name="device" fetch="https://github.com/Luks-organization/" revision="16" />
-  <remote name="luks" fetch="https://github.com/Luks-organization/" revision="bka" />
   <remote name="luks-gitlab" fetch="https://gitlab.com/LeCmnGend/" revision="clang-19" />
 
   <!-- Device -->
-  <project path="device/realme/MT6785" name="devece_realme_MT6785" remote="luks-evo" />
+  <!--project path="device/realme/MT6785" name="devece_realme_MT6785" remote="luks-evo" /> -->
 
   <!-- QCOM  -->
-  <project path="vendor/qcom/opensource/bluetooth-commonsys-intf" name="android_vendor_qcom_opensource_bluetooth-commonsys-intf" remote="nonlos" />
+  <project path="vendor/qcom/opensource/bluetooth-commonsys-intf" name="android_vendor_qcom_opensource_bluetooth-commonsys-intf" remote="bt" />
 
   <!-- Hardware -->
-  <project path="hardware/mediatek" name="infinity_hardware_mediatek" remote="luks" />
+  <project path="hardware/mediatek" name="infinity_hardware_mediatek" remote="device" />
   <project path="hardware/oplus" name="android_hardware_oplus" remote="device" />
 
   <!-- SEPolicy -->
-  <project path="device/mediatek/sepolicy_vndr" name="mediatek_sepolicy_vndr" remote="luks" />
+  <project path="device/mediatek/sepolicy_vndr" name="mediatek_sepolicy_vndr" remote="device" />
 
   <!-- Vendor -->
-  <project path="vendor/realme/MT6785" name="vendor_realme_MT6785" remote="device" />
+  <project path="vendor/realme/RMX2155L1" name="vendor_realme_RMX2155L1_F11" remote="device" />
   
   <!-- Kernel -->
-  <project path="kernel/realme/MT6785" name="android_kernel_realme_mt6785" remote="device" />
+  <project path="kernel/realme/mt6785" name="android_kernel_realme_mt6785" remote="device" clone-depth="1" />
 
   <!-- Clang -->
   <!--project path="prebuilts/clang/host/linux-x86/clang-proton" name="clang" remote="luks-gitlab" clone-depth="1" revision="clang-19" />-->
 
   <!-- Ims -->
-  <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="luks" />
+  <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="device" />
 
   <!-- ViperFX -->
-  <project path="vendor/ViperFX" name="ViperFX" remote="luks" />
+  <!--project path="vendor/ViperFX" name="ViperFX" remote="luks" />-->
+
+  <!-- Dolby -->
+  <project path="hardware/dolby" name="android_hardware_dolby" remote="dolby" />
+
+  <!-- Dsp -->
+  <project path="packages/apps/JamesDSPManager" name="packages_apps_JamesDSPManager" remote="dsp" />
+
 </manifest>
