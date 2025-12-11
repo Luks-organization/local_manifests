@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="dsp" fetch="https://github.com/Luks-organization/" revision="jdsp" />
   <remote name="dolby" fetch="https://github.com/Luks-organization/" revision="sony-1.3" />
   <remote name="bt" fetch="https://github.com/LineageOS/" revision="lineage-22.2" />
   <remote name="device" fetch="https://github.com/Luks-organization/" revision="16" />
@@ -38,6 +37,6 @@
   <project path="hardware/dolby" name="android_hardware_dolby" remote="dolby" />
 
   <!-- Dsp -->
-  <!--project path="packages/apps/JamesDSPManager" name="packages_apps_JamesDSPManager" remote="dsp" />-->
+  <!--project path="packages/apps/JamesDSPManager" name="packages_apps_JamesDSPManager" remote="device" />-->
 
 </manifest>
