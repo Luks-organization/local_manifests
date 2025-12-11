@@ -32,12 +32,12 @@
   <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="device" />
 
   <!-- ViperFX -->
-  <!--project path="vendor/ViperFX" name="ViperFX" remote="luks" />-->
+  <project path="packages/apps/ViperFX" name="ViperFX" remote="device" />
 
   <!-- Dolby -->
   <project path="hardware/dolby" name="android_hardware_dolby" remote="dolby" />
 
   <!-- Dsp -->
-  <project path="packages/apps/JamesDSPManager" name="packages_apps_JamesDSPManager" remote="dsp" />
+  <!--project path="packages/apps/JamesDSPManager" name="packages_apps_JamesDSPManager" remote="dsp" />-->
 
 </manifest>
