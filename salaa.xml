@@ -3,12 +3,12 @@
   <remote name="dolby" fetch="https://github.com/Luks-organization/" revision="sony-1.3" />
   <remote name="bt" fetch="https://github.com/LineageOS/" revision="lineage-22.2" />
   <remote name="device" fetch="https://github.com/Luks-organization/" revision="16" />
-  <remote name="dt" fetch="https://github.com/Luks-organization/" revision="Infinity-X_16" />
+  <remote name="dt" fetch="https://github.com/Luks-organization/" revision="Evo-X_bka" />
   <remote name="vendor" fetch="https://github.com/Luks-organization/" revision="16-F11" />
   <remote name="luks-gitlab" fetch="https://gitlab.com/LeCmnGend/" revision="clang-19" />
 
   <!-- Device -->
-  <project path="device/realme/salaa" name="devece_realme_salaa" remote="dt" />
+  <project path="device/realme/salaa" name="device_realme_salaa" remote="dt" />
 
   <!-- QCOM  -->
   <project path="vendor/qcom/opensource/bluetooth-commonsys-intf" name="android_vendor_qcom_opensource_bluetooth-commonsys-intf" remote="bt" />
