@@ -2,9 +2,10 @@
 <manifest>
   <remote name="dolby" fetch="https://github.com/Luks-organization/" revision="sony-1.3" />
   <remote name="bt" fetch="https://github.com/LineageOS/" revision="lineage-22.2" />
+  <remote name="kernel" fetch="https://github.com/Luks-organization/" revision="bq1" />
   <remote name="device" fetch="https://github.com/Luks-organization/" revision="16" />
-  <remote name="dt" fetch="https://github.com/Luks-organization/" revision="Evo-X_bka" />
-  <remote name="vendor" fetch="https://github.com/Luks-organization/" revision="16-F11" />
+  <remote name="dt" fetch="https://github.com/Luks-organization/" revision="Evo-X_bq1" />
+  <remote name="vendor" fetch="https://github.com/Luks-organization/" revision="16-F18" />
   <remote name="luks-gitlab" fetch="https://gitlab.com/LeCmnGend/" revision="clang-19" />
 
   <!-- Device -->
@@ -24,7 +25,7 @@
   <project path="vendor/realme/salaa" name="vendor_realme_salaa" remote="vendor" />
   
   <!-- Kernel -->
-  <project path="kernel/realme/mt6785" name="android_kernel_realme_mt6785" remote="device" clone-depth="1" />
+  <project path="kernel/realme/mt6785" name="android_kernel_realme_salaa" remote="kernel" />
 
   <!-- Clang -->
   <!--project path="prebuilts/clang/host/linux-x86/clang-proton" name="clang" remote="luks-gitlab" clone-depth="1" revision="clang-19" />-->
