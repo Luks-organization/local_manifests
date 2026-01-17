@@ -2,10 +2,10 @@
 <manifest>
   <remote name="dolby" fetch="https://github.com/Luks-organization/" revision="sony-1.3" />
   <remote name="bt" fetch="https://github.com/LineageOS/" revision="lineage-22.2" />
-  <remote name="kernel" fetch="https://github.com/Luks-organization/" revision="bq1" />
+  <remote name="kernel" fetch="https://github.com/StimLuks87/" revision="bq1" />
   <remote name="device" fetch="https://github.com/Luks-organization/" revision="16" />
-  <remote name="dt" fetch="https://github.com/Luks-organization/" revision="Evo-X_bq1" />
-  <remote name="vendor" fetch="https://github.com/Luks-organization/" revision="16-F18" />
+  <remote name="dt" fetch="https://github.com/Luks-organization/" revision="Infinity-X_16" />
+  <remote name="vendor" fetch="https://github.com/Luks-organization/" revision="bq1" />
   <remote name="luks-gitlab" fetch="https://gitlab.com/LeCmnGend/" revision="clang-19" />
 
   <!-- Device -->
@@ -16,16 +16,16 @@
 
   <!-- Hardware -->
   <project path="hardware/mediatek" name="infinity_hardware_mediatek" remote="device" />
-  <project path="hardware/oplus" name="android_hardware_oplus" remote="device" />
+  <project path="hardware/oplus" name="hardware_oplus" remote="device" />
 
   <!-- SEPolicy -->
   <project path="device/mediatek/sepolicy_vndr" name="mediatek_sepolicy_vndr" remote="device" />
 
   <!-- Vendor -->
-  <project path="vendor/realme/salaa" name="vendor_realme_salaa" remote="vendor" />
+  <project path="vendor/realme/salaa" name="vendor_realme_salaa_F18" remote="vendor" />
   
   <!-- Kernel -->
-  <project path="kernel/realme/mt6785" name="android_kernel_realme_salaa" remote="kernel" />
+  <project path="kernel/realme/mt6785" name="storm_kernel_realme_salaa" remote="kernel" />
 
   <!-- Clang -->
   <!--project path="prebuilts/clang/host/linux-x86/clang-proton" name="clang" remote="luks-gitlab" clone-depth="1" revision="clang-19" />-->
